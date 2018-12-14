@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layardetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".Detail_buku">
+    <ImageView
+        android:id="@+id/gambarnovel"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/buku"/>
+    <TextView
+        android:id="@+id/judulnovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambarnovel"
+        android:text="judul novel"/>
+    <TextView
+        android:id="@+id/penulisnovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulnovel"
+        android:text="penulis novel"/>
+    <TextView
+        android:id="@+id/tglnovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/penulisnovel"
+        android:text="tgl novel"/>
+    <TextView
+        android:id="@+id/kategorinovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tglnovel"
+        android:text="kategori novel"/>
+    <TextView
+        android:id="@+id/sinopsisnovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kategorinovel"
+        android:text="sinopsis novel"/>
+    <TextView
+        android:id="@+id/harganovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sinopsisnovel"
+        android:text="harga novel"/>
+
+
+    <RelativeLayout
+        android:id="@+id/Relativelayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sinopsisnovel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btbuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ini"
+            android:text="BUY"/>
+
+        <Button
+            android:id="@+id/btback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btbuy"
+            android:text="Back"/>
+    </RelativeLayout>
+</RelativeLayout>
