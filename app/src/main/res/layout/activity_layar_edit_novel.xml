@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_pembeli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarEditNovel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhotoId"
+            android:layout_width="175dp"
+            android:layout_height="124dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:id="@+id/btPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@+id/imgPhotoId"
+            android:layout_centerHorizontal="true"
+            android:text="SELECT PHOTO" />
+
+        <TextView
+            android:id="@+id/tvIdUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="172dp"
+            android:text="ID User :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtIdUser"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdUser"
+            android:layout_marginLeft="46dp"
+            android:layout_toRightOf="@+id/tvIdUser"
+            android:enabled="false"
+            android:hint="id_user" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtNama"
+            android:layout_alignParentStart="true"
+            android:text="Nama :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edtIdUser"
+            android:layout_below="@+id/tvIdUser"
+            android:hint="Nama" />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edtAlamat"
+            android:layout_alignParentStart="true"
+            android:text="Kategori:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvNama"
+            android:hint="Kategori" />
+
+        <TextView
+            android:id="@+id/tvTempatlahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtTempatlahir"
+            android:layout_alignParentStart="true"
+            android:text="Sinopsis:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtTempatlahir"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:hint="Sinopsis" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="242dp"
+            android:text="Pengarang:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/edtTempatlahir"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/tvUsername"
+            android:hint="Pengarang" />
+
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="149dp"
+            android:layout_toEndOf="@+id/tvIdUser"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btUpdate"
+            android:layout_marginEnd="92dp"
+            android:text="Delete" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:hint="Pesan"
+        android:inputType="textMultiLine"
+        android:textSize="20dp" />
+</RelativeLayout>

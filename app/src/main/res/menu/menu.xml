@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuTambahTransPembelian"
+        android:title="Tambah Trans Pembelian"/>
+    <item android:id="@+id/menuListUser"
+        android:title="List User"/>
+    <item android:id="@+id/menuInsertDataUser"
+        android:title="Insert Data User"/>
+    <item android:id="@+id/menuListNovel"
+        android:title="List Novel"/>
+    <item android:id="@+id/menuInsertDataNovel"
+        android:title="Insert Data Novel"/>
+</menu>

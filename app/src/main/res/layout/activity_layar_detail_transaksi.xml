@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layardetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".LayarDetailTransaksi">
+    <TextView
+        android:id="@+id/tvIdTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Transaksi : "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvIdUser"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtIdUser"
+        android:layout_alignParentStart="true"
+        android:text="Id User  : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvIdNovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtIdNovel"
+        android:layout_alignParentStart="true"
+        android:text="Id Novel : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtTanggal"
+        android:layout_alignParentStart="true"
+        android:text="Tanggal Beli : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvIdHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:text="Harga : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtIdTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="94dp"
+        android:hint="IdTransaksi" />
+
+    <EditText
+        android:id="@+id/edtIdUser"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtIdTrans"
+        android:layout_below="@+id/edtIdTrans"
+        android:hint="IdUser" />
+
+    <EditText
+        android:id="@+id/edtIdNovel"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtIdTrans"
+        android:layout_below="@+id/edtIdUser"
+        android:hint="IdNovel" />
+
+    <EditText
+        android:id="@+id/edtTanggal"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtIdTrans"
+        android:layout_below="@+id/tvIdNovel"
+        android:hint="Tanggal Beli"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edtHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvIdHarga"
+        android:layout_alignStart="@+id/edtIdTrans"
+        android:hint="Harga"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="189dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btInsert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert" />
+
+        <Button
+            android:id="@+id/btUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="142dp"
+        android:inputType="textMultiLine"
+        android:text="Pesan Muncul disini"
+        android:textSize="20sp" />
+</RelativeLayout>

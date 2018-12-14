@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_pembeli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarInsertUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAddPhotoId"
+            android:layout_width="106dp"
+            android:layout_height="94dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:id="@+id/btAddPhotoId"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/imgAddPhotoId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="Add" />
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditText2"
+            android:layout_alignParentStart="true"
+            android:text="Nama" />
+
+        <EditText
+            android:id="@+id/EditText2"
+            android:layout_width="279dp"
+            android:layout_height="44dp"
+            android:layout_above="@+id/EditText3"
+            android:layout_alignParentEnd="true"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditText3"
+            android:layout_alignParentStart="true"
+            android:text="Alamat" />
+
+        <EditText
+            android:id="@+id/EditText3"
+            android:layout_width="279dp"
+            android:layout_height="44dp"
+            android:layout_above="@+id/EditText4"
+            android:layout_alignParentEnd="true"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/EditText4"
+            android:layout_alignParentStart="true"
+            android:text="Tempat Lahir" />
+
+        <EditText
+            android:id="@+id/EditText4"
+            android:layout_width="279dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView5"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditText5"
+            android:layout_alignParentStart="true"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/EditText5"
+            android:layout_width="278dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/TextView4"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView6"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditText6"
+            android:layout_alignParentStart="true"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/EditText6"
+            android:layout_width="277dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/EditText5"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+
+        <!--android:id="@+id/LinearLayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tvAddTelp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <Button
+            android:id="@+id/btAddData"
+            android:layout_width="77dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="138dp"
+            android:text="Insert" />
+
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btAddData"
+            android:layout_marginTop="-117dp"
+            android:hint="Pesan"
+            android:inputType="textMultiLine"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

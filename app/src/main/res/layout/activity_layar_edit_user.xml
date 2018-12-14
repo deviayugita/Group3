@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_pembeli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LayarEditUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="498dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhotoId"
+            android:layout_width="177dp"
+            android:layout_height="131dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:id="@+id/btPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/imgPhotoId"
+            android:layout_centerHorizontal="true"
+            android:text="ADD" />
+
+        <TextView
+            android:id="@+id/tvIdUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btPhotoId"
+            android:layout_marginTop="10dp"
+            android:text="ID User :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtIdUser"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdUser"
+            android:layout_marginLeft="56dp"
+            android:layout_toRightOf="@+id/tvIdUser"
+            android:enabled="false"
+            android:hint="id_user" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edtIdUser"
+            android:text="Nama :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvIdUser"
+            android:hint="Nama" />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edtNama"
+            android:text="Alamat :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAlamat"
+            android:layout_alignLeft="@+id/edtIdUser"
+            android:layout_marginLeft="-3dp"
+            android:layout_toRightOf="@+id/tvAlamat"
+            android:hint="Alamat" />
+
+        <TextView
+            android:id="@+id/tvTempatlahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtTempatlahir"
+            android:layout_alignParentStart="true"
+            android:text="Tempat Lahir:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtTempatlahir"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edtAlamat"
+            android:hint="Tempat Lahir" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edtTempatlahir"
+            android:text="Username:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="255dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/edtTempatlahir"
+            android:hint="Username" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edtUsername"
+            android:text="Password:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="255dp"
+            android:layout_height="39dp"
+            android:layout_alignBaseline="@+id/tvPassword"
+            android:layout_alignParentEnd="true"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/btDelete"
+            android:layout_toEndOf="@+id/tvIdUser"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginEnd="95dp"
+            android:text="Delete" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:hint="Pesan"
+        android:inputType="textMultiLine"
+        android:textSize="20dp" />
+</RelativeLayout>
+

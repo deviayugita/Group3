@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/default_user" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_server"
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_toEndOf="@id/imgUser"
+        android:alpha="0.8"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="6dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="152dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="Nama"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/tvNama"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tvIdPembeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_below="@id/tvIdPembeli"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvNama"
+                android:hint="ID NOVEL"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNama"
+                android:layout_marginTop="10dp"
+                android:hint="Kategori : "
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvKategoriContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvSinopsisContent"
+                android:layout_alignTop="@+id/tvKategori"
+                android:hint="Comedy"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvSinopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tvSinopsisContent"
+                android:hint="Sinopsis :"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSinopsisContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="72dp"
+                android:hint="AREMA Harga diri"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tvPengarangContent"
+                android:hint="Pengarang :"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPengarangContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tvKategoriContent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="28dp"
+                android:hint="Admin"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/card_server"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary" />
+</RelativeLayout>
